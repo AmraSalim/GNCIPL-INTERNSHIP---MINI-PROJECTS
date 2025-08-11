@@ -78,6 +78,7 @@ Table of content :
 
     
 ###1. Importing all the essential libraries
+
 import string 
 import re
 import codecs
@@ -98,6 +99,7 @@ import itertools
 
 
 ###2. Loading the dataset
+
 Using the pandas library we were able to read the dataset of the respective languages
 Reading the data for English dataset.
 english_df = pd.read_csv("europarl-v7.bg-en.en", "ut-8", header=None, names=["English"])
