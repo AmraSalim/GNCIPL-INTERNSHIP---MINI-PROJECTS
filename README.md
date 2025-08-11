@@ -99,7 +99,6 @@ import itertools
 
 2. Loading the dataset
 Using the pandas library we were able to read the dataset of the respective languages
-
 Reading the data for English dataset.
 english_df = pd.read_csv("europarl-v7.bg-en.en", "ut-8", header=None, names=["English"])
 Reading the data for German dataset.
@@ -109,6 +108,7 @@ french_df = pd.read_csv("europarl-v7.fr-en.fr", "utf-8", header=None, names=["Fr
 Reading the dataset for Spanish dataset.
 spanish_df = pd.read_csv("europarl-v7.es-en.es", "utf-8", header=None, names=["Spanish"])
 And many other languages can be read similarly
+
 
 
 3. Data Text Pre-Processing.
@@ -122,30 +122,25 @@ Output:
 ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~ 
 
 Text Pre-Processing basically involves.
-
 Tokenization : Splitting the sentences into words are basically called as tokenization. The words here are called tokens.
-
 Stopwords removal : Stopwords are nothing but these are frequently occuring words and it does not add any information to the model. For example : is,the,prepositions and article words.
-
 Lower case conversion : The necessity of converting all the words into lower case is that (for ex: Mumbai,MUMBAI,mumbai) the meaning of the word is same but our model will detect them as 3 different words. To avoid this confusion we convert all the sentences and words into lower case.
-
 Removing numeric / digits : Having numbers into our sentences dosent make any sence to our model it will just add up the number of features
-
 Removing Punctuation / Special characters : Same as numeric values it dosent add any value to our model.
-
 Removing characters for foreign languages : If you want to identify the languages like chinese and japanese and you want to make your model to understand these languages in this case you can also remove the character(only for the foreign languages).
-
 Normalization : The words can be be written into different formats (USA, U.S.A, usa) we need to convert these into one format.
-
 Stemming & Lemmatization : This is the most important step to perform. In this we are cutting the words either we are bringing the word to its original /root form or we are cutting the word into it form and int from.
+
 
 
 4. Transforming the dataset into single dataset.
 We have now pre processed all the language dataset and now we need to just combine all the individual dataset into a single Data frame for our convinience.
 
 
+
 5. Dividing the dataset.
 After we have combined all the individual dataset we need to split our dataset Independent(x) and Dependent(y) variable(target variable) for prediction.
+
 
 
 6. Converting the words into vectors.
@@ -158,12 +153,15 @@ TF-IDF : TF-IDF creates vectors from the text which contains information on the 
 Word2Vec : Word2Vec creates vectors that are numerical representation of word features, features such as the context of individual words. The purpose and usefulness of Word2Vec is to group the vectors of similar words together into vector space. That is it detects similarities mathematically.
 
 
+
 7. Creating a pipeline.
 Using the vectorizer and fitting the model into the pipeline.
 
 
+
 8. Prediction and model evaluation.
 In this project I've used Logistic Regression it has performed well with all this data and was able to acheive 92% accuracy.
+
 
 
 9. Creating a pickle file.
