@@ -1,6 +1,26 @@
 # GNCIPL-INTERNSHIP Projects
 This repository showcases the five mini projects I developed during my 5-week internship at GNCIPL. Each project was designed to strengthen my practical skills in data analysis, machine learning, Python programming, and problem-solving. This covers a range of concepts from EDA and visualization to model building and evaluation
 
+# Dataset
+Dataset Description – Mall Customers
+
+The Mall Customers dataset contains information about 200 customers of a mall, focusing on demographic and spending behavior attributes. It is often used for customer segmentation tasks in marketing analytics.
+
+Key Features:
+
+CustomerID – Unique identifier for each customer
+
+Gender – Customer’s gender (Male/Female)
+
+Age – Customer’s age in years
+
+Annual Income (k$) – Customer’s annual income, measured in thousand dollars
+
+Spending Score (1–100) – Score assigned by the mall based on customer spending behavior and purchasing patterns
+
+Purpose:
+This dataset is widely used for unsupervised learning techniques, particularly clustering algorithms, to identify distinct customer segments. It allows analysis of patterns in demographics and spending habits, enabling data-driven marketing strategies.
+
 
 ## Week 1 – Data Sourcing & Loading
 
